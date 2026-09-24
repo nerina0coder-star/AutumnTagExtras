@@ -1,6 +1,6 @@
 [build-system]
 
-equires = ["hatchling >= 1.26"]
+requires = ["hatchling >= 1.26"]
 build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
