@@ -12,6 +12,8 @@ with Base:
     from .Content import Content
     from .Enums import Enums
 
+from .declarative_tag import DeclarativeTag
+
 
 class Branch:
     """
@@ -32,10 +34,12 @@ class Branch:
         self.div = self.content.Containers.Division
         self.form = self.content.Containers.Form
 
+        self.DeclarativeTag = DeclarativeTag
+
         base.extensions = self
 
         base.tag.alias("p", self.p)
         base.tag.alias("div", self.div)
         base.tag.alias("form", self.form)
 
-__all__ = ["Branch"]
+__all__ = ["Branch", "DeclarativeTag"]

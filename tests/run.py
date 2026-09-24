@@ -43,6 +43,12 @@ class Run:
         result = unittest.TextTestRunner(verbosity=2).run(test)
         self.successful["phrasings"] = result.wasSuccessful()
 
+    def run_declarative_tag(self):
+        self._load()
+        test = unittest.loader.TestLoader().discover('tests', pattern='test_declarative_tag.py')
+        result = unittest.TextTestRunner(verbosity=2).run(test)
+        self.successful["declarative_tag"] = result.wasSuccessful()
+
     def _load(self):
         with new():
             Branch()

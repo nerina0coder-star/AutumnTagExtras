@@ -29,7 +29,7 @@ license = "MIT"
 readme = "README.md"
 authors = [{name = "Nerina0Coder",email = "github.py.coder@gmail.com"}]
 dependencies = [
-    "autumn-core~=1.0.2"
+    "autumn-core~=1.4.0"
 ]
 
 classifiers = [
